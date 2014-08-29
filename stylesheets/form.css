@@ -1,0 +1,55 @@
+* {
+  box-sizing:border-box;
+}
+body {
+  background:#eee;
+}
+form {
+  background:#fff;
+  padding:2em;
+  width:30em;
+  margin:5em auto;
+  border-radius:4px;
+  box-shadow:0 1px 2px rgba(0,0,0,.25);
+}
+fieldset {
+  border:none;
+  position:relative;
+  font-family:arial,sans-serif;
+}
+
+input {
+  width:20em;
+  padding:1em 1em .8em 1em;
+  width:100%;
+  font-size:1.2em;
+  border:1px solid #aaa;
+  box-shadow:inset 0 1px 3px rgba(0,0,0,.15);
+  border-radius:10px;
+}
+input:focus {
+  outline:none;
+  background:#fbfbe9;
+}
+
+input + label {
+  display:block;
+  cursor:text;
+  color:#777;
+  transition:.15s ease-out all;
+  position:absolute;
+  top:1.8em;
+  left:2.3em;
+}
+
+input:focus + label,
+label.stay {
+  font-size: .8125em; /* 13/16 */
+  position: absolute; 
+  top:1em;
+  left:3em;
+  font-size:.7em;
+  font-weight:bold;
+  color:#f1773b;
+  transition:.15s ease-out all;
+}

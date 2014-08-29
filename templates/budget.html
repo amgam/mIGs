@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/dashboard/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+<title>Tembusu | IG Admin</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../bootstraptembusu/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../stylesheets/budget.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css"></style><style id="holderjs-style" type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script></head>
+
+      <body><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://tembusu.nus.edu.sg">Tembusu</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/main">Home</a></li>
+                <li><a href="/interestgroups">Interest Groups</a></li>
+                <li><a href="/facilities">Facilities</a></li>
+                <li class="active"><a href="/IGadmin">IG Admin</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+              <li><a href="/profile" id="identity">{{user_name}}</a></li>  
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="{{logout}}" onclick = "window.open('https://openid.nus.edu.sg/auth/logout');"> Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+              <ul class="nav nav-sidebar">
+                <li><a href="http://getbootstrap.com/examples/dashboard/#">Overview</a></li>
+                <li class="active"><a href="/budget">Budget Details</a></li>
+              </ul>
+              <ul class="nav nav-sidebar">
+                <li><a href="/edit">Edit</a></li>
+                <li><a href="">Media</a></li>
+              </ul>
+              <ul class="nav nav-sidebar">
+                <li><a href="">Users</a></li>
+                <li><a href="">Settings</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+              <h1 class="page-header">Budgetting of Gastronomy Club</h1>
+              <h3 class="subtitle">Here is where you record or draft a budget proposal for your IG upcoming event.</h3>
+
+
+              <h2 class="sub-header">Budget Summary of [current event]</h2>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Item Description</th>
+                      <th>Budget</th>
+                      <th>Actual</th>
+                      <th>Difference</th>
+                      <th>Remarks</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Food catering from dining hall</td>
+                      <td>$500</td>
+                      <td>$200</td>
+                      <td>$300</td>
+                      <td></td>
+                    </tr>
+                    <tr class="danger">
+                      <td>Music bands</td>
+                      <td>$1,000</td>
+                      <td>$1,500</td>
+                      <td>-$500</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th>Total</th>
+                      <th>$1,500</th>
+                      <th>$1,700</th>
+                      <th>-$200</th>
+                      <th>Deficit is compensated by splitting amount evenly among IG members</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+
+              <h2 class="sub-header">Past Budget Log</h2>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Date</th>
+                      <th>Event Title</th>
+                      <th>Budget</th>
+                      <th>Actual</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1,001</td>
+                      <td>01 Jan 14</td>
+                      <td>Welcome Tea</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,002</td>
+                      <td>amet</td>
+                      <td>consectetur</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,003</td>
+                      <td>Integer</td>
+                      <td>nec</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,003</td>
+                      <td>libero</td>
+                      <td>Sed</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,004</td>
+                      <td>dapibus</td>
+                      <td>diam</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,005</td>
+                      <td>Nulla</td>
+                      <td>quis</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,006</td>
+                      <td>nibh</td>
+                      <td>elementum</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,007</td>
+                      <td>sagittis</td>
+                      <td>ipsum</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,008</td>
+                      <td>Fusce</td>
+                      <td>nec</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,009</td>
+                      <td>augue</td>
+                      <td>semper</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,010</td>
+                      <td>massa</td>
+                      <td>Vestibulum</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,011</td>
+                      <td>eget</td>
+                      <td>nulla</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,012</td>
+                      <td>taciti</td>
+                      <td>sociosqu</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,013</td>
+                      <td>torquent</td>
+                      <td>per</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,014</td>
+                      <td>per</td>
+                      <td>inceptos</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                    <tr>
+                      <td>1,015</td>
+                      <td>sodales</td>
+                      <td>ligula</td>
+                      <td>$1,500</td>
+                      <td>$1,800</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./IGadmin_files/jquery.min.js"></script>
+    <script src="./IGadmin_files/bootstrap.min.js"></script>
+    <script src="./IGadmin_files/docs.min.js"></script>
+    
+
+  </body></html>

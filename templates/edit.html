@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/dashboard/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="../favicon.ico">
+
+<title>Tembusu | IG Admin</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../bootstraptembusu/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../stylesheets/edit.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css"></style><style id="holderjs-style" type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script></head>
+
+      <body><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://tembusu.nus.edu.sg">Tembusu</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/main">Home</a></li>
+                <li><a href="/interestgroups">Interest Groups</a></li>
+                <li><a href="/facilities">Facilities</a></li>
+                <li class="active"><a href="/IGadmin">IG Admin</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/profile" id="identity">{{user_name}}</a></li>  
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="{{logout}}" onclick = "window.open('https://openid.nus.edu.sg/auth/logout');"> Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+              <ul class="nav nav-sidebar">
+                <li><a href="http://getbootstrap.com/examples/dashboard/#">Overview</a></li>
+                <li><a href="/budget">Budget Details</a></li>
+              </ul>
+              <ul class="nav nav-sidebar">
+                <li class="active"><a href="/edit">Edit</a></li>
+                <li><a href="">Media</a></li>
+              </ul>
+              <ul class="nav nav-sidebar">
+                <li><a href="">Users</a></li>
+                <li><a href="">Settings</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+              <h1 class="page-header">Edit Gastronomy Club</h1>
+              <h2 class="sub-header">Add an event</h2>
+              <form class="form-horizontal">
+                <fieldset>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="textinput">Event Title</label>  
+                    <div class="col-md-6">
+                      <input id="textinput" name="textinput" type="text" placeholder="Welcome Tea" class="form-control input-md" required="">
+
+                    </div>
+                  </div>
+
+                  <!-- Password input-->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="passwordinput">Date of Event</label>
+                    <div class="col-md-6">
+                      <input id="passwordinput" name="passwordinput" type="password" placeholder="dd/mm/yyyy" class="form-control input-md" required="">
+
+                    </div>
+                  </div>
+
+                  <!-- Multiple Checkboxes -->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="checkboxes">Funding Phase</label>
+                    <div class="col-md-6">
+                      <div class="checkbox">
+                        <label for="checkboxes-0">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                          In progress
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label for="checkboxes-1">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+                          Completed
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label for="checkboxes-2">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+                          Incomplete
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label for="checkboxes-3">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
+                          Not required
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Textarea -->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="textarea">Remarks</label>
+                    <div class="col-md-6">                     
+                      <textarea class="form-control" id="textarea" name="textarea"></textarea>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </form>
+
+              
+            </div>
+          </div>
+        </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./IGadmin_files/jquery.min.js"></script>
+    <script src="./IGadmin_files/bootstrap.min.js"></script>
+    <script src="./IGadmin_files/docs.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+      jQuery.post("/checkuser","",function(data){
+        if(data == "false"){ //first time user
+          $('#myModal').modal('show');
+        } else if(data == "true"){
+          jQuery.post("/retrieveuser","",function(newdata){
+            $("#identity").html(newdata);
+          },"text");
+        }
+      },"text");
+    });
+    </script>
+
+  </body></html>

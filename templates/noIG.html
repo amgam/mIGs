@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="../favicon.ico">
+
+<title>No Interest Groups Found! | Interest Groups</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../bootstraptembusu/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../stylesheets/performingarts.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script></head>
+
+      <body><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+
+        <body style=""><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+          <div class="navbar-wrapper">
+            <div class="container">
+
+              <!-- Fixed navbar -->
+              <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://tembusu.nus.edu.sg">Tembusu</a>
+                  </div>
+                  <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                      <li><a href="/main">Home</a></li>
+                      <li><a href="/interestgroups">Interest Groups</a></li>
+                      <li><a href="/facilities">Facilities</a></li>
+                      <li class = "active"><a href="/IGlist">miGs</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="/profile" id="identity">{{user_name}}</a></li>  
+                      <li><a href="/contact">Contact Us</a></li>
+                      <li><a href="{{logout}}" onclick = "window.open('https://openid.nus.edu.sg/auth/logout');"> Logout</a></li>
+                    </ul>
+                  </div><!--/.nav-collapse -->
+                </div>
+              </div>
+
+              <!-- Main jumbotron for a primary marketing message or call to action -->
+              <div class="jumbotron">
+                <div class="container">
+                  <h2>Oops!</h2>
+                  <p>Looks like you haven't signed up for any IGs! Would like to view the IGs available instead?</p>
+                </div>
+
+                <p align= "right">
+                  <a href="/interestgroups" class="btn btn-success btn-large">View Interest Groups</a>
+                </p>  
+              </div>
+
+              <footer>
+                <p>© Handmade by Amit and Tricia 2014</p>
+            </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-transition.js"></script>
+    <script src="../bootstraptembusu/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#input").val($('title').html());
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      jQuery.post("/checkuser","",function(data){
+        if(data == "false"){ //first time user
+          $('#myModal').modal('show');
+        } else if(data == "true"){
+          jQuery.post("/retrieveuser","",function(newdata){
+            $("#identity").html(newdata);
+          },"text");
+        }
+      },"text");
+    });
+    </script>  
+
+  </body></html>

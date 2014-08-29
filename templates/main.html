@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://getbootstrap.com/examples/carousel/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="../favicon.ico">
+
+<title>Tembusu</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../bootstraptembusu/css/bootstrap.css" rel="stylesheet">
+
+<!-- Link to the stylesheet we will create for the form -->
+<link href="../stylesheets/form.css" rel="stylesheet"> 
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <!-- Custom styles for this template -->
+      <link href="../stylesheets/carousel.css" rel="stylesheet">
+      <style id="holderjs-style" type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><style type="text/css"></style>
+    </head>
+<!-- NAVBAR
+  ================================================== -->
+  <a name="top"></a>
+  <body style=""><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://tembusu.nus.edu.sg">Tembusu</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/main">Home</a></li>
+                <li><a href="/interestgroups">Interest Groups</a></li>
+                <li><a href="/facilities">Facilities</a></li>
+                <li><a href="/IGlist">miGs</a></li>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/profile" id="identity">{{user_name}}</a></li> 
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="{{logout}}" onclick = "window.open('https://openid.nus.edu.sg/auth/logout');"> Logout</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!--  Carousel - consult the Twitter Bootstrap docs at 
+  http://twitter.github.com/bootstrap/javascript.html#carousel -->
+  <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+    <div class="carousel-inner">
+      <div class="item active"><!-- class of active since it's the first item -->
+        <img src="../images/firstslide.jpg" alt="first slide" />
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+      <div class="item">
+        <img src="../images/secondslide.jpg" alt="second slide" />
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="../images/thirdslide.jpg" alt="third slide" />
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+  href values must reference the id for this carousel -->
+  <a class="carousel-control left" href="#this-carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+
+  <a class="carousel-control right" href="#this-carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></a>
+</div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" alt="140x140" src="../images/orbitalteam.png" style="width: 200px; height: 200px;">
+          <h2>About Us</h2>
+          <p>Hey there! We're Amit and Trica, both Year 2s at Tembusu College. We made this hoping that all Tembusians would have a portal to know more about Tembusu's informal events and IGs and even sign up for them. Since the site is still very new, we'd love to hear any suggestions for improvement or any issues buggin you. Cheers!</p>
+          <p><a class="btn btn-default" href="/contact" role="button">Contact Us »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" alt="1000*1000" src="{{image}}" style="width: 200px; height: 200px;">
+          <h2>About You</h2>
+          <p>Add a picture of yourself if you havent already!</p>
+          <p><a class="btn btn-default" href="/profile" role="button">Update Profile »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" alt="140x140" src="http://images.travelpod.com/users/mesabree/3.1268791949.south-pole-library-reading-room.jpg" style="width: 200px; height: 200px;">
+          <h2>Facility Booking</h2>
+          <p>Want to play floorball in the MPH? Or just jam with friends in the Abbey? Book all of it right here.</p>
+          <p><a class="btn btn-default" href="/facilities" role="button">Book Now »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <!-- FOOTER -->
+      <footer>
+    <p>© Handmade by Amit and Tricia 2014</p>
+  </footer>
+
+    </div><!-- /.container -->
+
+    <!--Modal-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">May we get to know you better?</h4>
+          </div>
+          <div class="modal-body">
+            <form class="modal-dialog modal-med" role="form" action="/insertuser" method="post">
+              <div class="form-group">
+                <label for="name">What would like to be called?</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+               <label for="room">Which room do you live in?</label>
+               <input type="text" class="form-control" id="room" name="room" placeholder="Enter room number">
+             </div>
+
+             <div class="form-group">
+               <label for="hp">In case we need to call you?</label>
+               <input type="text" class="form-control" id="hp" name="hp" placeholder="Enter mobile number">
+             </div>
+             <button type="submit" class="btn btn-default">Submit</button>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-transition.js"></script>
+    <script src="../bootstraptembusu/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+    <!-- Link to the javascript file we will create -->
+    <script src="../bootstraptembusu/js/form.js"></script>
+    <!-- script to start slide transition once site is accesed--> 
+    <script>
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 4000
+      });
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      jQuery.post("/checkuser","",function(data){
+        if(data == "false"){ //first time user
+          $('#myModal').modal('show');
+        } else if(data == "true"){
+          jQuery.post("/retrieveuser","",function(newdata){
+            $("#identity").html(newdata);
+          },"text");
+        }
+      },"text");
+    });
+    </script>
+
+
+
+
+    
+
+  </body></html>
